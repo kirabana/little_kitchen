@@ -24,14 +24,163 @@
 	</div>
 
 	<div class="container">
-		<div class="col-9">
+		<div class="col-8">
 			<div class="col-5">
 				<img src="assets/img/fried_rice.png" alt="">
 			</div>
 			<div class="col-6">
 				<h2>Title Comes Here</h2>
 				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
 			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+
+
+			<div class="col-5">
+				<img src="assets/img/fried_rice.png" alt="">
+			</div>
+			<div class="col-6">
+				<h2>Title Comes Here</h2>
+				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
+			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+
+
+			<div class="col-5">
+				<img src="assets/img/fried_rice.png" alt="">
+			</div>
+			<div class="col-6">
+				<h2>Title Comes Here</h2>
+				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
+			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+
+
+			<div class="col-5">
+				<img src="assets/img/fried_rice.png" alt="">
+			</div>
+			<div class="col-6">
+				<h2>Title Comes Here</h2>
+				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
+			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+
+
+			<div class="col-5">
+				<img src="assets/img/fried_rice.png" alt="">
+			</div>
+			<div class="col-6">
+				<h2>Title Comes Here</h2>
+				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
+			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+
+
+			<div class="col-5">
+				<img src="assets/img/fried_rice.png" alt="">
+			</div>
+			<div class="col-6">
+				<h2>Title Comes Here</h2>
+				<p>Cras nec mauris eget enim volutpat ornare. Donec eget lorem ac metus porta sodales. Nam ut lectus ut metus mattis vehicula. Nunc nec massa mauris. </p>
+				<div class="readMoreButton">Read More</div>
+			</div>
+			<div class="postFooter">
+				<div class="footerImg">
+					<img src="assets/img/footer_1.png" alt="">
+				</div>
+				<div class="text">04 Jul 2014</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_2.png" alt="">
+				</div>
+				<div class="text">Hikari Tsukui</div>
+
+				<div class="footerImg">
+					<img src="assets/img/footer_3.png" alt="">
+				</div>
+				<div class="text">(4) Comments</div>
+			</div>
+			
+
 		</div>
 
 		<div class="col-2">
@@ -48,6 +197,8 @@
 			<h3>Western</h3>
 		</div>
 	</div>
+
+	<footer></footer>
 
 </body>
 </html>
