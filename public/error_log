@@ -1,0 +1,82 @@
+[15-Jul-2014 17:23:36 Pacific/Auckland] PHP Fatal error:  Class 'Category_collection' not found in /home/hikarits/public_html/little_kitchen/views/category.php on line 1
+[15-Jul-2014 17:25:37 Pacific/Auckland] PHP Fatal error:  Class 'Category_collection' not found in /home/hikarits/public_html/little_kitchen/views/category.php on line 1
+[15-Jul-2014 17:40:00 Pacific/Auckland] PHP Fatal error:  Class 'Category_collection' not found in /home/hikarits/public_html/little_kitchen/views/category.php on line 1
+[15-Jul-2014 17:47:06 Pacific/Auckland] PHP Fatal error:  Class 'Category_collection' not found in /home/hikarits/public_html/little_kitchen/views/category.php on line 1
+[15-Jul-2014 17:54:52 Pacific/Auckland] PHP Fatal error:  Class 'Category_collection' not found in /home/hikarits/public_html/little_kitchen/views/category.php on line 1
+[15-Jul-2014 17:55:56 Pacific/Auckland] PHP Fatal error:  Class 'Database' not found in /home/hikarits/public_html/little_kitchen/models/category_collection.php on line 10
+[15-Jul-2014 17:56:55 Pacific/Auckland] PHP Fatal error:  Class 'Database' not found in /home/hikarits/public_html/little_kitchen/models/category_collection.php on line 10
+[16-Jul-2014 15:09:33 Pacific/Auckland] PHP Parse error:  syntax error, unexpected end of file in /home/hikarits/public_html/little_kitchen/views/page.php on line 191
+[16-Jul-2014 15:09:51 Pacific/Auckland] PHP Parse error:  syntax error, unexpected end of file in /home/hikarits/public_html/little_kitchen/views/page.php on line 190
+[16-Jul-2014 15:15:13 Pacific/Auckland] PHP Fatal error:  Class 'Entry_list' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 3
+[16-Jul-2014 15:19:40 Pacific/Auckland] PHP Fatal error:  Class 'Entry_list' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 3
+[16-Jul-2014 15:23:58 Pacific/Auckland] PHP Fatal error:  Class 'Entry_list' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 5
+[16-Jul-2014 15:26:18 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:26:18 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:26:55 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:26:55 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:29:45 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:29:45 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:30:03 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:30:03 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:30:28 Pacific/Auckland] PHP Fatal error:  Class 'Entry_list' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 8
+[16-Jul-2014 15:31:11 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:31:11 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:32:06 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:32:06 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:33:04 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:33:04 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 15:33:39 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 186
+[16-Jul-2014 15:38:33 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 186
+[16-Jul-2014 15:43:43 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 186
+[16-Jul-2014 15:45:28 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 186
+[16-Jul-2014 16:10:31 Pacific/Auckland] PHP Fatal error:  Class 'Entry_list' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 8
+[16-Jul-2014 16:13:53 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 16:13:53 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 3
+[16-Jul-2014 16:14:16 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 186
+[16-Jul-2014 16:26:18 Pacific/Auckland] PHP Fatal error:  Class 'model' not found in /home/hikarits/public_html/little_kitchen/views/page.php on line 10
+[16-Jul-2014 16:29:11 Pacific/Auckland] PHP Fatal error:  Class 'Database' not found in /home/hikarits/public_html/little_kitchen/models/entry_list.collection.php on line 11
+[16-Jul-2014 16:32:24 Pacific/Auckland] PHP Fatal error:  Class 'model' not found in /home/hikarits/public_html/little_kitchen/public/index.php on line 8
+[16-Jul-2014 16:33:25 Pacific/Auckland] PHP Warning:  require_once(config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/libraries/model.lib.php on line 23
+[16-Jul-2014 16:33:25 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required 'config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/libraries/model.lib.php on line 23
+[16-Jul-2014 16:33:43 Pacific/Auckland] PHP Fatal error:  Call to undefined method Database::get_fields() in /home/hikarits/public_html/little_kitchen/libraries/model.lib.php on line 44
+[16-Jul-2014 16:37:50 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '<' in /home/hikarits/public_html/little_kitchen/views/page.php on line 4
+[16-Jul-2014 16:43:52 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/hikarits/public_html/little_kitchen/views/page.php on line 5
+[16-Jul-2014 16:47:24 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/hikarits/public_html/little_kitchen/views/page.php on line 4
+[16-Jul-2014 18:01:23 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 244
+[16-Jul-2014 18:03:30 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 244
+[16-Jul-2014 18:04:26 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 244
+[16-Jul-2014 18:05:53 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 244
+[17-Jul-2014 15:34:23 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/hikarits/public_html/little_kitchen/views/page.php on line 3
+[17-Jul-2014 15:34:55 Pacific/Auckland] PHP Fatal error:  Call to a member function count_items() on a non-object in /home/hikarits/public_html/little_kitchen/public/index.php on line 35
+[17-Jul-2014 15:35:16 Pacific/Auckland] PHP Fatal error:  Call to a member function count_items() on a non-object in /home/hikarits/public_html/little_kitchen/public/index.php on line 44
+[17-Jul-2014 15:36:39 Pacific/Auckland] PHP Fatal error:  Call to a member function count_items() on a non-object in /home/hikarits/public_html/little_kitchen/views/page.php on line 6
+[17-Jul-2014 15:37:12 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/hikarits/public_html/little_kitchen/views/page.php on line 11
+[17-Jul-2014 15:37:22 Pacific/Auckland] PHP Fatal error:  Call to a member function count_items() on a non-object in /home/hikarits/public_html/little_kitchen/views/page.php on line 6
+[17-Jul-2014 15:52:37 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/hikarits/public_html/little_kitchen/views/entry.php on line 14
+[17-Jul-2014 16:13:29 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/hikarits/public_html/little_kitchen/views/entry.php on line 12
+[17-Jul-2014 16:14:57 Pacific/Auckland] PHP Fatal error:  Call to undefined method Model::count_items() in /home/hikarits/public_html/little_kitchen/views/entry.php on line 6
+[17-Jul-2014 16:15:24 Pacific/Auckland] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/hikarits/public_html/little_kitchen/libraries/database.class.php on line 244
+[17-Jul-2014 16:15:33 Pacific/Auckland] PHP Fatal error:  Call to undefined method Model::count_items() in /home/hikarits/public_html/little_kitchen/views/entry.php on line 6
+[17-Jul-2014 17:11:22 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:12:30 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:12:35 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:12:38 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:12:55 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:14:53 Pacific/Auckland] PHP Fatal error:  Call to undefined method Model::count_items() in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 16
+[17-Jul-2014 17:15:06 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:15:12 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:15:24 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:15:46 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:16:24 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:17:52 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:19:40 Pacific/Auckland] PHP Fatal error:  Call to undefined method Model::count_items() in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 18
+[17-Jul-2014 17:19:48 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[17-Jul-2014 17:20:49 Pacific/Auckland] PHP Fatal error:  Class 'Product_list' not found in /home/hikarits/public_html/little_kitchen/views/category_page.php on line 13
+[20-Jul-2014 15:21:49 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 10
+[20-Jul-2014 15:49:14 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 11
+[20-Jul-2014 16:08:15 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 11
+[20-Jul-2014 16:09:37 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 11
+[20-Jul-2014 16:11:37 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 11
+[20-Jul-2014 16:11:40 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/hikarits/public_html/little_kitchen/views/login.php on line 11
+[20-Jul-2014 17:15:13 Pacific/Auckland] PHP Warning:  require_once(../libraries/config.lib.php): failed to open stream: No such file or directory in /home/hikarits/public_html/little_kitchen/public/login.php on line 3
+[20-Jul-2014 17:15:13 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../libraries/config.lib.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hikarits/public_html/little_kitchen/public/login.php on line 3
