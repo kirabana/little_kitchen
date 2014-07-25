@@ -1,3 +1,4 @@
+
 <?php 
 require_once '../models/category_collection.php';
  ?>
@@ -13,6 +14,7 @@ require_once '../models/category_collection.php';
 		<?php endforeach; ?>
 	</div>
 </div>
+
 
 
 

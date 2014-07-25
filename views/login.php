@@ -1,7 +1,8 @@
 <div class="containerC">
 	<div class="login">
+		<h2>Login</h2>
 		<p>Please login using the form below.</p>
-		<p>If you are not a member yet and wish to be, please register by clicking here and filling out the details as written.</p>
+		<p>If you are not a member yet and wish to be, please register by clicking on the register button below.</p>
 		<br>
 
 		<?php if($error): ?>
