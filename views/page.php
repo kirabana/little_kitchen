@@ -1,6 +1,8 @@
 <?php 
 
-$p = new Entry_list($_GET['category_id']);
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+$p = new Entry_list($_GET['category_id'], $page);
 
 $c = new model('tb_posts');
 $c->load(1);
@@ -25,6 +27,12 @@ $n = $p->count_items();
 					</div>
 				</div>
 			<? endforeach; ?>
+
+			<ul class="pagination-links">
+				<?php for($i = 1; $i <= ceil($p->count_items() / $p->per_page); $i++): ?>
+					<li class="<? if($i == $_GET['page']) echo 'current'?>"><a href="index.php?page=<?=$i?>"><?=$i?></a></li>
+				<?php endfor; ?>
+			</ul>
 		</div>
 	</div>
 

@@ -15,7 +15,7 @@ $n = $p->count_items();
  ?>
 
 <div class="container">
-	<div class="catText">Create Entry</div>
+	<div class="catText2"><a href="create_form.php">Create Entry</a></div>
 	<div class="line"></div>
 		<div class="col-12">
 			<? foreach($p->items as $prod): ?>
@@ -28,10 +28,16 @@ $n = $p->count_items();
 					</div>
 					<div class="col-8">
 						<p><?=$prod['description']?></p>
-						<div class="readMoreButton"><a href="edit_entry.php?entry_id=<?=$prod['id']?>">Edit This</a></div>
-						<div class="readMoreButton"><a href="delete_entry.php?id=<?=$prod['id']?>">Delete This</a></div>
+						<div class="readMoreButton2"><a href="edit_form.php?id=<?=$prod['id']?>">Edit This</a></div>
+						<div class="readMoreButton2"><a href="delete_entry.php?id=<?=$prod['id']?>">Delete This</a></div>
 					</div>
 				</div>
 			<? endforeach; ?>
+			<ul class="pagination-links">
+				<?php for($i = 1; $i <= ceil($p->count_items() / $p->per_page); $i++): ?>
+					<li class="<? if($i == $_GET['page']) echo 'current'?>"><a href="index.php?page=<?=$i?>"><?=$i?></a></li>
+				<?php endfor; ?>
+			</ul>
 		</div>
+
 	</div>

@@ -1,28 +1,29 @@
 <div class="main">
 	<h2><?=$title?></h2>
 
-	<?=$form->open()?>
+	<?=Form::open()?>
 		<div class="row">
-			<?=$form->label('name', 'Name:')?>
-			<?=$form->input('text', 'name', $page->name)?>
+			<?=Form::label('name', 'Name:')?>
+			<?=Form::input('text', 'name', $page->name)?>
 		</div>
+
 		<div class="row">
-			<?=$form->label('textarea', 'Content:')?>
-			<?=$form->textarea('textarea', $page->content)?>
+			<?=Form::label('textarea', 'Content:')?>
+			<?=Form::textarea('textarea', $page->content)?>
 		</div>
 
 		<? if($_GET['id']): ?>
 			<div class="row">
-				<?=$form->submit('Edit')?>
+				<?=Form::submit('Edit')?>
 				<a class="button" href="delete_page.php?id=<?=$_GET['id']?>">Delete Page</a>
 			</div>
 		<? else: ?>
 
 			<div class="row">
-				<?=$form->submit('Create')?>
+				<?=Form::submit('Create')?>
 			</div>
 
 		<? endif; ?>
 
-	<?=$form->close()?>
+	<?=Form::close()?>
 </div>

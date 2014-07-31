@@ -76,31 +76,6 @@ h5{
 	margin-bottom: 1em;
 }
 
-html, body{
-	background: #fff;
-	height: 100%;
-}
-
-.container{
-	margin: 0 auto;
-	width: 960px;
-	height: auto;
-}
-
-.site-footer{
-	width: 100%;
-	height: 1.5em;
-	background-color: #202930;
-
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	text-align: center;
-	padding: 1em 0;
-	margin-top: 2em;
-	float: left;
-}
-
 .red{
 	color: red;
 }
@@ -122,15 +97,15 @@ html, body{
 	color: #202930;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin: 0 0.5em 0.5em 1em;
+	margin: 1em 0 0.5em 0;
 	border: solid 1px #33AAA4;
-	padding: 0.3em 1em;
+	padding: 0.3em 0em;
 	width: 100%;
 	text-align: center;
 	float: left;
 	border-radius: 0.3em;
-	margin-top: 2em;
 }
+
 
 .catText2 a{
 	text-decoration: none;
@@ -163,8 +138,6 @@ p{
 	line-height: 1.5em;
 }
 
-
-
 .pageNumber{
 	width: 100%;
 	height: 3em;
@@ -176,7 +149,7 @@ p{
 #header{
 	width: 100%;
 	height: 10em;
-	background-image: url(../img/wood.png)
+	background-image: url(../img/wood.png);
 }
 
 .logo{
@@ -246,7 +219,27 @@ img{
 	padding-top: 0.4em;
 }
 
+.readMoreButton2{
+	width: 10em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid #33AAA4;
+
+	color: #33AAA4;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	padding-top: 0.4em;
+	margin-bottom: 1em;
+}
+
 .readMoreButton a{
+	text-decoration: none;
+	color: #33AAA4;
+}
+
+.readMoreButton2 a{
 	text-decoration: none;
 	color: #33AAA4;
 }
@@ -289,17 +282,19 @@ input{
 	background-color: #E22602;
 }
 
-.catBack{
-	width: 100%;
-	height: 180px; 
-}
-
 .category{
 	width: 960px;
-	height: 100%;
+	height: auto;
 	margin: 0 auto;
 	border-bottom: solid 1px #E6E6E6;
 	padding-bottom: 1em;
+	float: left;
+}
+
+.catBack{
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
 }
 
 .categorySide{
@@ -398,4 +393,41 @@ ol li{
 	border-radius: 7px;
 	text-decoration: none;
 	font-size: 15px;
+}
+
+textarea{
+	width: 25em;
+	height: 10em;
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+.container{
+	margin: 0 auto;
+	width: 960px;
+	max-height: 100%;
+	height: 100%;
+}
+
+.container:after {
+  content: "";
+  display: block;
+}
+
+.site-footer{
+	width: 100%;
+	height: 1.5em;
+	background-color: #202930;
+
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 1em 0;
+	margin-top: 2em;
+	float: left;
 }

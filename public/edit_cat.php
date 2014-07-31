@@ -7,6 +7,6 @@ Login::kickout();
 
 include '../views/header.php';
 include '../views/admin_navigation.php';
-include '../views/admin_home.php';
+include '../views/admin_category.php';
 include '../views/admin_page.php';
 include '../views/footer.php';

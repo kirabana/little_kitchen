@@ -14,6 +14,7 @@
 			<?=Form::file()?>
 			<p><img src="<?=$page->image?>"></p>
 		</div>
+
 		<div class="row">
 			<?=Form::label('description', 'Description:')?><br>
 			<?=Form::textarea('description', $page->description)?>
@@ -26,15 +27,16 @@
 			<?=Form::label('method', 'Method:')?><br>
 			<?=Form::textarea('method', $page->method)?>
 		</div>
+
 		<div class="row">
 			<?=Form::label('textarea', 'Category:')?><br>
 			<select name='category' id='catgory_select'>";
-				<?=Form::options($categories, $page->category_id)?>
+				<?=Form::options($categories, $pre_selected)?>
 			</select>
 		</div>
 
 		<div class="row">
-			<?=Form::submit('Edit')?>
+			<?=Form::submit('Create')?>
 		</div>
 
 	<?=Form::close()?>

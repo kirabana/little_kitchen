@@ -3,6 +3,7 @@
 require_once '../libraries/database.class.php';
 require_once '../models/category_model.php';
 require_once '../libraries/login.lib.php';
+
 Login::kickout();
 
 if($_GET['id']){

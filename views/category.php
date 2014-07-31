@@ -1,9 +1,3 @@
-
-<?php 
-require_once '../models/category_collection.php';
- ?>
-
-<?php $categories = new Category_collection(); ?>
 <div class="catBack">
 	<div class="category">
 		<h3>Category</h3>
@@ -14,9 +8,6 @@ require_once '../models/category_collection.php';
 		<?php endforeach; ?>
 	</div>
 </div>
-
-
-
 
 <!-- 	<div class="catBack">
 		<div class="category">

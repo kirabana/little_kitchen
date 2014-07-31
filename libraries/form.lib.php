@@ -1,102 +1,121 @@
 <?php
 
-/*
-	
-	Form creation class
-
-	usage   : Static
-	version : 1
-	author  : Nick Sheffield
-
+/**
+*	Form creation class
+*
+*	@version 1.2
+*	@author  Nick Sheffield
+*
 */
 
 class Form{
 
 	/**
-	*	Creates a <form> open tag
+	*	Creates a form open tag
+	*	
+	*	@param  string $action The url for the form to post to
+	*	@param  string $method Either "post" or "get"
 	*
-	*	@param 	string $action The url for the form to post to
-	*	@param 	string $method Either "post" or "get"
-	*
-	*	@return string $html The completed <form> tag
-	*
-	**/
+	*	@return string $html   The completed form tag
+	*	
+	*/
 	public static function open($action = '', $method = 'post'){
 		$html = "<form action='$action' method='$method'>";
 		return $html;
 	}
+
 	/**
-	*	Creates a <form enctype='multipart/form-data'> open tag (for file uploading)
+	*	Creates a form open tag that works with uploads
+	*	
+	*	@param  string $action The url for the form to post to
 	*
-	*	@param 	string $action The url for the form to post to
-	*
-	*	@return string $html The completed <form enctype='multipart/form-data'> tag
-	*
-	**/
-	public static function open_multipart($action = ''){
+	*	@return string $html   The completed form tag
+	*	
+	*/
+	public static function open_upload($action = ''){
 		$html = "<form action='$action' method='post' enctype='multipart/form-data'>";
 		return $html;
 	}
+
 	/**
-	*	Creates a </form> close tag
+	*	Creates a form close tag
 	*
-	*	@return string $html The completed </form> tag
-	*
-	**/
+	*	@return string $html   The form close tag
+	*	
+	*/
 	public static function close(){
-		$html = '</form>';
-		return $html;
+		return '</form>';
 	}
+
 	/**
-	*	Creates a <input> tag
+	*	Creates a input tag
+	*	
+	*	@param  string $type   The type of input it will be
+	*	@param  string $name   The name (and id) attribute of the input
+	*	@param  string $value  The value to pre-fill the field with
+	*	@param  string $extras Any extra attributes we want to add
 	*
-	*	@param 	string $type 	The type of input it will be
-	*	@param 	string $name 	The name of the input
-	*	@param 	string $value 	The value of the input (optional)
-	*	@param 	string $extras 	Any extra features (optional)
-	*
-	*	@return string $html The completed <input> tag
-	*
-	**/
+	*	@return string $html   The completed input tag
+	*	
+	*/
 	public static function input($type, $name, $value = '', $extras = ''){
 		$html = "<input type='$type' id='$name' name='$name' value='$value' $extras>";
 		return $html;
 	}
+
 	/**
-	*	Creates a <label> tag
 	*
-	*	@param 	string $for 	Which named input is the label for
-	*	@param 	string $text 	What the label will say
+	*	Make a string of html attributes out of an array
 	*
-	*	@return string $html The completed <label> tag
 	*
-	**/
+	*/
+	public function make_extras($extras){
+		$html = '';
+		foreach($extras as $key => $val){
+			$html .= " $key='$val' ";
+		}
+		return $html;
+	}
+
+	/**
+	*	Creates a label tag
+	*	
+	*	@param  string $for    The id attribute of the field this label is for
+	*	@param  string $text   The text to appear on the label
+	*
+	*	@return string $html   The completed label tag
+	*	
+	*/
 	public static function label($for, $text){
 		$html = "<label for='$for'>$text</label>";
 		return $html;
 	}
+
 	/**
-	*	Creates a <textarea> tag
+	*	Creates a textarea tag
+	*	
+	*	@param  string $name   The name attribute of the textarea
+	*	@param  string $value  The value to pre-fill the textarea with
 	*
-	*	@param 	string $name 	The name of the textarea
-	*	@param 	string $value 	The value of the textarea (optional)
-	*
-	*	@return string $html The completed <textarea> tag
-	*
-	**/
+	*	@return string $html   The completed textarea tag
+	*	
+	*/
 	public static function textarea($name, $value = ''){
 		$html = "<textarea id='$name' name='$name'>$value</textarea>";
 		return $html;
 	}
+
 	/**
-	*	Creates multiple <option> tags with one selected by default
+	*	Creates a set of option tags from an array
 	*
-	*	@param 	string $values 			The values of the options
-	*	@param 	string $pre_selected 	The previously selected option
+	*	@used-by self::select() to get option tags
+	*	
+	*	@param  array  $values        An associative array including the value, and text of each option tag
+	*	@param  string $pre_selected  The option tag to add the 'select' attribute to
 	*
-	*	@return string $html The completed <textarea> tag
-	*
-	**/
+	*	@return string $html          The completed option tags
+	*	
+	*/
 	public static function options($values, $pre_selected){
 		$html = '';
 		foreach($values as $value => $text){
@@ -107,19 +126,22 @@ class Form{
 		}
 		return $html;
 	}
+
 	/**
-	*	Creates a <select> tag that include the options function
+	*	Creates a select tag with option tags within it
+	*	
+	*	@uses   self::options() to get option tags
 	*
-	*	@param 	string $name 			The name of the select
-	*	@param 	string $value 			The values of the select (optional)
-	*	@param 	string $pre_selected 	The previously selected option
+	*	@param  string $name         The name attribute of the <select> tag
+	*	@param  array  $values       An array sent to self::options()
+	*	@param  string $pre_selected A string sent to self::options()
 	*
-	*	@return string $html The completed <select> tag
-	*
-	**/
+	*	@return string $html         The completed select tag
+	*	
+	*/
 	public static function select($name, $values, $pre_selected){
 		$html = "<select name='$name' id='$name'>";
-		$html .= self::options($values. $pre_selected);
+		$html .= self::options($values, $pre_selected);
 		$html .= '</select>';
 		return $html;
 	}
@@ -127,93 +149,228 @@ class Form{
 	/* Shortcut functions for common input types */
 
 	/**
-	*	Creates a <input type="hidden"> tag
+	*	Creates a hidden input tag
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $name	The name of the input
-	*	@param 	string $value 	The value of the input
-	*
-	*	@return string $html The completed <input type="hidden"> tag
-	*
-	**/
+	*	@param  string $name  The name attribute
+	*	@param  string $value The value attribute
+	*	
+	*	@return string $html  The completed hidden input tag
+	*	
+	*/
 	public static function hidden($name, $value){
 		$html = self::input('hidden', $name, $value);
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="text"> tag
+	*	Creates a text input tag
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $name	The name of the input
-	*	@param 	string $value 	The value of the input (optional)
-	*
-	*	@return string $html The completed <input type="text"> tag
-	*
-	**/
+	*	@param  string $name  The name attribute
+	*	@param  string $value The value attribute
+	*	
+	*	@return string $html  The completed text input tag
+	*	
+	*/
 	public static function text($name, $value = ''){
 		$html = self::input('text', $name, $value);
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="password"> tag
+	*	Creates a password input tag
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $name	The name of the input
-	*	@param 	string $value 	The value of the input (optional)
-	*
-	*	@return string $html The completed <input type="text"> tag
-	*
-	**/
+	*	@param  string $name  The name attribute
+	*	@param  string $value The value attribute
+	*	
+	*	@return string $html   The completed password input tag
+	*	
+	*/
 	public static function password($name, $value = ''){
 		$html = self::input('password', $name, $value);
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="file"> tag that allows for multiple uploads
+	*	Creates a file input tag
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $name	The name of the input, set to 'file' by default
-	*	@param 	string $value 	The value of the input (optional)
-	*
-	*	@return string $html The completed <input type="file"> tag
-	*
-	**/
+	*	@param  string $name The name attribute. '[]' will be added to the end.
+	*	
+	*	@return string $html   The completed file input tag
+	*	
+	*/
 	public static function file($name = 'file'){
 		$html = self::input('file', $name.'[]', '', 'multiple');
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="submit"> tag
+	*	Creates a submit button
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $text The text of the submit button, set to 'Submit' by default
-	*
-	*	@return string $html The completed <input type="submit"> tag
-	*
-	**/
-	public static function submit($text = 'Submit', $extras = ''){
-		$html = self::input('submit', '', $text, $extras);
+	*	@param  string $text  Text to show on the button
+	*	
+	*	@return string $html  The completed submit button
+	*	
+	*/
+	public static function submit($text = 'Submit'){
+		$html = self::input('submit', '', $text);
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="hidden" name="MAX_FILE_SIZE" value="4194304"> tag
+	*	Creates a hidden input tag for to MAX_FILE_SIZE
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $size 	The size of the value, set to '4194304' by default
-	*
-	*	@return string $html The completed <input type="hidden" name="MAX_FILE_SIZE" value="4194304"> tag
-	*
-	**/
+	*	@param  string $value The max size in bytes
+	*	
+	*	@return string $html  The completed hidden input tag
+	*	
+	*/
 	public static function max_file_size($size = '4194304'){
 		$html = self::hidden('MAX_FILE_SIZE', $size);
 		return $html;
 	}
+
 	/**
-	*	Creates a <input type="number"> tag
+	*	Creates a number input tag
+	*	
+	*	@uses   self::input() to create the tag
 	*
-	*	@param 	string $name 	The name of the input
-	*	@param 	string $value 	The value of the input (optional)
-	*	@param 	string $extras 	Any extra features (optional)
-	*
-	*	@return string $html The completed <input type="number"> tag
-	*
-	**/
+	*	@param  string $name   The name attribute
+	*	@param  string $value  The value attribute
+	*	@param  string $extras Any extra attributes to be added to the tag
+	*	
+	*	@return string $html   The completed number input tag
+	*	
+	*/
 	public static function number($name, $value = '', $extras = ''){
 		$html = self::input('number', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a email input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string $name   The name attribute
+	*	@param  string $value  The value attribute
+	*	@param  string $extras Any extra attributes to be added to the tag
+	*	
+	*	@return string $html   The completed email input tag
+	*	
+	*/
+	public static function email($name, $value = '', $extras = ''){
+		$html = self::input('email', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a url input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string $name   The name attribute
+	*	@param  string $value  The value attribute
+	*	@param  string $extras Any extra attributes to be added to the tag
+	*	
+	*	@return string $html   The completed url input tag
+	*	
+	*/
+	public static function url($name, $value = '', $extras = ''){
+		$html = self::input('url', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a date input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string $name   The name attribute
+	*	@param  string $value  The value attribute
+	*	@param  string $extras Any extra attributes to be added to the tag
+	*	
+	*	@return string $html   The completed date input tag
+	*	
+	*/
+	public static function date($name, $value = '', $extras = ''){
+		$html = self::input('date', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a checkbox input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string  $name     The name attribute
+	*	@param  string  $value    The value attribute
+	*	@param  boolean $checked  Whether to check the box or not
+	*	@param  string  $extras   Any extra attributes to be added to the tag
+	*	
+	*	@return string  $html     The completed checkbox input tag
+	*	
+	*/
+	public static function checkbox($name, $value = '', $checked = false, $extras = ''){
+			
+		$extras .= $checked ? ' checked' : '';
+
+		$html = self::input('checkbox', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a radio input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string  $name     The name attribute
+	*	@param  string  $value    The value attribute
+	*	@param  boolean $checked  Whether to check the box or not
+	*	@param  string  $extras   Any extra attributes to be added to the tag
+	*	
+	*	@return string  $html     The completed radio input tag
+	*	
+	*/
+	public static function radio($name, $value = '', $checked = false, $extras = ''){
+			
+		$extras .= $checked ? ' checked' : '';
+
+		$html = self::input('radio', $name, $value, $extras);
+		return $html;
+	}
+
+	/**
+	*	Creates a range input tag
+	*	
+	*	@uses   self::input() to create the tag
+	*
+	*	@param  string $name     The name attribute
+	*	@param  string $value    The value attribute
+	*	@param  int    $min      The lowest end of the range
+	*	@param  int    $max      The highest end of the range
+	*	@param  int    $step     How much to increment or decrement
+	*	@param  string $extras   Any extra attributes to be added to the tag
+	*	
+	*	@return string  $html     The completed range input tag
+	*	
+	*/
+	public static function range($name, $value = '', $min = 0, $max = 100, $step = 1, $extras = ''){
+			
+		$extras .= $checked ? ' checked' : '';
+
+		$html = self::input('range', $name, $value, $extras);
 		return $html;
 	}
 }

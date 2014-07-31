@@ -32,7 +32,7 @@ require_once '../models/page_collection.php';
 
 include '../views/header.php';
 include '../views/navigation.php';
-include '../views/category.php';
+include '../public/category.php';
 
 
 if($_GET['category_page_id'] == true){

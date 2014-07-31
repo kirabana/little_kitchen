@@ -38,3 +38,4 @@ $p->load($_GET['category_page_id']);
 					<? endforeach; ?>
 		</div>
 	</div>
+	</div>
