@@ -2,8 +2,8 @@
 	<div class="category">
 		<h3>Category</h3>
 		<?php foreach($categories->items as $catname): ?>
-			<a href="index.php?category_page_id=<?=$catname['id']?>">
-				<div class="catText"><?=$catname['name']?></div>
+			<a href="index.php?category_page_id=<?=Security::filter_html($catname['id'])?>">
+				<div class="catText"><?=Security::filter_html($catname['name'])?></div>
 			</a>
 		<?php endforeach; ?>
 	</div>

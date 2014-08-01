@@ -5,7 +5,7 @@
 	<?=Form::open_upload()?>
 		<div class="row">
 			<?=Form::label('title', 'Title:')?><br>
-			<?=Form::input('text', 'title', $page->title)?>
+			<?=Form::input('text', 'title', $page->title, 'required')?>
 		</div>
 
 		<div class="row">
@@ -17,15 +17,15 @@
 
 		<div class="row">
 			<?=Form::label('description', 'Description:')?><br>
-			<?=Form::textarea('description', $page->description)?>
+			<?=Form::textarea('description', $page->description, 'required')?>
 		</div>
 		<div class="row">
 			<?=Form::label('ingredients', 'Ingredients:')?><br>
-			<?=Form::textarea('ingredients', $page->ingredients)?>
+			<?=Form::textarea('ingredients', $page->ingredients, 'required')?>
 		</div>
 		<div class="row">
 			<?=Form::label('method', 'Method:')?><br>
-			<?=Form::textarea('method', $page->method)?>
+			<?=Form::textarea('method', $page->method, 'required')?>
 		</div>
 
 		<div class="row">
@@ -40,6 +40,10 @@
 		</div>
 
 	<?=Form::close()?>
+
+	<script>
+		$('form').validate();
+	</script>
 
 </div>
 </div>

@@ -11,16 +11,16 @@
 			
 			<div class="row">
 				<?=Form::label('username', 'Username:')?><br>
-				<?=Form::input('text', 'username', $_POST['username'])?>
+				<?=Form::input('text', 'username', $_POST['username'], 'required')?>
 			</div>
 
 			<div class="row">
 				<?=Form::label('password', 'Password:')?><br>
-				<?=Form::input('password', 'password', $_POST['password'])?>
+				<?=Form::input('password', 'password', $_POST['password'], 'required')?>
 			</div>
 
 			<div class="row">
-				<?=Form::label('confirmpassword', 'Confirm Password:')?><br>
+				<?=Form::label('confirmpassword', 'Confirm Password:', 'required')?><br>
 				<?=Form::input('password', 'confirmpassword')?>
 			</div>
 

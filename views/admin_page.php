@@ -12,6 +12,8 @@ $c->load(1);
 $n = $p->count_items();
 
  ?>
+
+
  <div class="container">
 	<div class="catText2"><a href="edit_cat.php">Click Here To Create/Edit/Delete Categories</a></div>
 	<div class="catText2"><a href="edit_entry.php">Click Here To Create/Edit/Delete Entries</a></div>

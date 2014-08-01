@@ -33,10 +33,10 @@ else if($_POST){
 }
 
 
-require_once '../views/header.php';
-require_once '../views/admin_navigation.php';
-require_once '../views/admin_register.php';
-require_once '../views/footer.php';
+include '../views/header.php';
+include '../views/admin_navigation.php';
+include '../views/admin_register.php';
+include '../views/fixedFooter.php';
 
 
  ?>

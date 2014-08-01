@@ -25,4 +25,4 @@ if($_POST)
 require_once '../views/header.php';
 require_once '../views/admin_navigation.php';
 require_once '../views/category_form.php';
-require_once '../views/footer.php';
+include '../views/fixedFooter.php';

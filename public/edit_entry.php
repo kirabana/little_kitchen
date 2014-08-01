@@ -3,7 +3,9 @@ require_once '../libraries/database.class.php';
 require_once '../libraries/config.class.php';
 require_once '../libraries/login.lib.php';
 require_once '../libraries/admin.lib.php';
+require_once '../libraries/security.lib.php';
 require_once '../models/entry_list.collection.php';
+
 
 Login::kickout();
 

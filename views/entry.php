@@ -7,34 +7,18 @@ $p->load($_GET['entry_id']);
 
 	<div class="containerC">
 		<div class="containerB">
-			<h2><?=$p->title?></h2>
-			<div class="postFooterB">
-				<div class="footerImg">
-					<img src="assets/img/footer_1.png" alt="">
-				</div>
-				<div class="text">04 Jul 2014</div>
-
-				<div class="footerImg">
-					<img src="assets/img/footer_2.png" alt="">
-				</div>
-				<div class="text">Hikari Tsukui</div>
-
-				<div class="footerImg">
-					<img src="assets/img/footer_3.png" alt="">
-				</div>
-				<div class="text">(4) Comments</div>
-			</div>
-
+			<h2><?=Security::filter_html($p->title)?></h2>
+			
 			<div class="entryImg">
-				<img src="<?=$p->image?>" alt="">
+				<img src="<?=Security::filter_html($p->image)?>" alt="">
 			</div>
 			
-			<p><?=$p->description?></p>
+			<p><?=Security::filter_html($p->description)?></p>
 			<div class="line"></div>
 			<h5>Ingredients</h5>
-			<p><?=$p->ingredients?></p>
+			<p><?=Security::filter_html($p->ingredients)?></p>
 			<h5>Method</h5>
-			<?=$p->method?>
+			<?=Security::filter_html($p->method)?>
 		</div>
 	</div>
 

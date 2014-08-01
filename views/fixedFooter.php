@@ -1,6 +1,6 @@
 </div>
 </div>
-	<footer class="site-footer">
+	<footer class="site-footer2">
 			©Copyright 2014 Littl Kitchen. All rights reserved.
 	</footer>
 	

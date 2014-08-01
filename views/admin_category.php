@@ -10,8 +10,8 @@ $subjects = new  Category_collection();
 	<div class="category">
 		<h2>Categories</h2>
 		<?php foreach($subjects->items as $nav_subject): ?>
-			<a href="edit_category.php?id=<?=$nav_subject['id']?>">
-				<div class="catText"><?=$nav_subject['name']?></div></a>
+			<a href="edit_category.php?id=<?=Security::filter_html($nav_subject['id'])?>">
+				<div class="catText"><?=Security::filter_html($nav_subject['name'])?></div></a>
 
 			<?php endforeach; ?>
 			<a href="create_category.php" class="catText">Add New Category</a>

@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="main">
+	<div class="row">
+		<div class="catText2"><a href="edit_entry.php">Go Back To View All Entries</a></div>
+	</div>
 	<h2><?=$title?></h2>
+	<br>
 
 	<?=Form::open_upload()?>
 		<div class="row">

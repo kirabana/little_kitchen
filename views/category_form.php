@@ -1,9 +1,11 @@
-	<h2>Edit Category</h2>
+	<div class="container">
+
+	<h2><?=$title?></h2>
 
 	<?=Form::open()?>
 		<div class="row">
 			<?=Form::label('name', 'Name')?><br>
-			<?=Form::input('text', 'name', $category->title)?>
+			<?=Form::input('text', 'name', $category->title, 'required')?>
 		</div>
 		
 		<? if($_GET['id']): ?>
@@ -23,3 +25,4 @@
 
 
 	<?=Form::close()?>
+	</div>

@@ -48,8 +48,12 @@ if($_POST){
 $categories = array();
 
 foreach ($categories_col->items as $category) {
-	$categories[$category['id']] = $category['name'];
+	if($category['deleted']==0) $categories[$category['id']] = $category['name'];
 }
+
+
+
+
 
 
 include '../views/header.php';

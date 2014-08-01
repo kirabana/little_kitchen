@@ -26,12 +26,12 @@ $p->load($_GET['category_page_id']);
 
 						<div class="col-12B">
 
-							<h2><?=$prod['title']?></h2>
+							<h2><?=Security::filter_html($prod['title'])?></h2>
 							<div class="col-4">
-								<img src="<?=$prod['image']?>" alt="">
+								<img src="<?=Security::filter_html($prod['image'])?>" alt="">
 							</div>
 							<div class="col-8">
-								<p><?=$prod['description']?></p>
+								<p><?=Security::filter_html($prod['description'])?></p>
 								<div class="readMoreButton"><a href="index.php?entry_id=<?=$prod['id']?>">Read More</a></div>
 							</div>
 						</div>

@@ -13,12 +13,12 @@
 			
 			<div class="row">
 				<?=Form::label('username', 'Username:')?><br>
-				<?=Form::input('text', 'username', $_POST['username'])?>
+				<?=Form::input('text', 'username', $_POST['username'], 'required')?>
 			</div>
 
 			<div class="row">
 				<?=Form::label('password', 'Password:')?><br>
-				<?=Form::input('password', 'password', $_POST['password'])?>
+				<?=Form::input('password', 'password', $_POST['password'], 'required')?>
 			</div>
 
 			<div class="row">
@@ -26,10 +26,6 @@
 			</div>
 
 		<?=Form::close()?>
-
-		<div class="row">
-			<a href="register.php"><button class="register">Register</button></a>
-		</div>
 	</div>
 </div>
 
